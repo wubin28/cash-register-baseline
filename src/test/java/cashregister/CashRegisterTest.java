@@ -2,15 +2,15 @@ package cashregister;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.mock;
-
 public class CashRegisterTest {
 
-    @Test
-    public void process() {
-        Printer mockPrinter = mock(Printer.class);
 
-        assertEquals(5, 2 + 3);
+    @Test
+    public void should_print_null_purchase() {
+        //initialize CashRegister and fake Printer
+
+        cashRegister.process(null);
+
+        //verify that printer was called
     }
 }
